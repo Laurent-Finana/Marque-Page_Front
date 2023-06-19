@@ -13,8 +13,9 @@ import {
 } from '../actions/user';
 
 const usersMiddleware = (store) => (next) => (action) => {
-  const url = 'http://laurent-finana-server.eddi.cloud/projet-02-marque-page-back/public/api/';
+  // const url = 'http://laurent-finana-server.eddi.cloud/projet-02-marque-page-back/public/api/';
   // const url = 'http://laurent-finana.vpnuser.lan:8000/api/';
+  const url = 'http://localhost:8000/api/';
 
   switch (action.type) {
     case SUBMIT_LOGIN:
